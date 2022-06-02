@@ -1,0 +1,17 @@
+node_modules/
+**/.git
+**/.gitignore
+
+# Ignore artifacts:
+build
+coverage
+target/
+
+# Ignoring test files
+**/*.test.js
+
+# Ignoring package-lock file
+package-lock.json
+
+# VSCode
+/.vscode
