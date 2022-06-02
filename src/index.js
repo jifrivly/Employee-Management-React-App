@@ -1,42 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from 'react-router-dom';
+import ReactDOM from 'react-dom/client';
 
 import ReduxProvider from './configureRedux';
 import reportWebVitals from './reportWebVitals';
 
-import MainFrame from './Routes/MainFrame';
-import LoginPage from './Routes/Login';
-
-import { ROUTES } from './Routes.constants';
-import { CommonUtils } from './utils/commonUtils';
-
 import './index.scss';
 
-function render(View) {
-  return CommonUtils.isLoggedIn() ?
-    <Redirect to="/" /> :
-    View;
-};
+import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ReduxProvider>
-      <Router>
-        <Switch>
-          <Route path={ROUTES.LOGIN} render={(props) => render(<LoginPage {...props} />)} />
-          <Route path={ROUTES.INDEX} component={MainFrame} />
-          <Redirect from='*' to={ROUTES.INDEX} />
-        </Switch>
-      </Router>
-    </ReduxProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+    <React.StrictMode>
+        <ReduxProvider>
+            <App />
+        </ReduxProvider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,18 +11,17 @@ import { FORM_FIELDS } from './Login.config';
 
 import style from './style.module.scss';
 
-
 export default class LoginPage extends Component {
     state = {
         email: {
             value: 'eve.holt@reqres.in',
-            error: ''
+            error: '',
         },
         password: {
             value: 'cityslicka',
-            error: ''
-        }
-    }
+            error: '',
+        },
+    };
 
     componentDidUpdate(prevProps) {
         const { loading, error } = this.props;
@@ -42,8 +41,8 @@ export default class LoginPage extends Component {
         this.setState({
             [e.target.name]: {
                 value,
-                error: data.error || null
-            }
+                error: data.error || null,
+            },
         });
     };
 
@@ -75,6 +74,7 @@ export default class LoginPage extends Component {
         );
     }
 }
+
 LoginPage.PropType = {
     className: PropType.string,
     value: PropType.string,
