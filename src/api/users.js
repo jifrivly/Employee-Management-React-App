@@ -1,7 +1,7 @@
 import { APIInstance } from './apiInstance';
 
 export const instance = new APIInstance({
-    baseURL: '/unknown'
+    baseURL: '/users',
 });
 
 const api = instance.api;
