@@ -1,4 +1,4 @@
-@import "../abstracts/controls";
+@import '../abstracts/controls';
 .ant-collapse {
     border: 0;
     background-color: transparent;
@@ -11,7 +11,7 @@
         @extend .flex-column;
         .ant-collapse-header {
             padding: 0.5rem 1rem 0.5rem 2.5rem;
-            background-color: theme-colors("primary", "light", 0.06);
+            background-color: theme-colors('primary', 'light', 0.06);
             .ant-collapse-arrow {
                 top: 50%;
                 padding: 0;
@@ -19,7 +19,7 @@
             }
         }
         .ant-collapse-content {
-            border: solid 1px theme-colors("primary", "light", 0.06);
+            border: solid 1px theme-colors('primary', 'light', 0.06);
             .ant-collapse-content-box {
                 padding: 0.5rem;
             }

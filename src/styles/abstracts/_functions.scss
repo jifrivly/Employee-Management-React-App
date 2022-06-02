@@ -1,4 +1,4 @@
-@import "./mixins";
+@import './mixins';
 .inline-flex {
     @include inline-flex;
 }
@@ -68,22 +68,28 @@
 .image-overlay {
     @include linear-gradient(
         to top,
-        (theme-colors("primary", "base", $opacity: 0.7) 20%, theme-colors("primary", "base", $opacity: 0.01) 100%)
+        (
+            theme-colors('primary', 'base', $opacity: 0.7) 20%,
+            theme-colors('primary', 'base', $opacity: 0.01) 100%
+        )
     );
 }
 .timeline-box {
     @include linear-gradient(
         to top,
-        (theme-colors("primary", "base", $opacity: 0.1) 20%, theme-colors("primary", "base", $opacity: 0.01) 100%)
+        (
+            theme-colors('primary', 'base', $opacity: 0.1) 20%,
+            theme-colors('primary', 'base', $opacity: 0.01) 100%
+        )
     );
 }
 .borer-theam {
-    border-color: theme-colors("primary", "base", 0.1);
+    border-color: theme-colors('primary', 'base', 0.1);
 }
 
 .break-text {
     word-break: break-word;
     line-break: strict;
     white-space: normal;
-    @include hyphens("auto");
+    @include hyphens('auto');
 }

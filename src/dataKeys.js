@@ -1,3 +1,3 @@
 export const KEYS = {
-    ACCESS_TOKEN: 'accessToken'
+    ACCESS_TOKEN: 'accessToken',
 };

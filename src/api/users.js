@@ -1,4 +1,3 @@
-
 import { APIInstance } from './apiInstance';
 
 export const instance = new APIInstance({

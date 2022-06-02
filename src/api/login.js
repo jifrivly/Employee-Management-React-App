@@ -1,8 +1,7 @@
-
 import { APIInstance } from './apiInstance';
 
 export const instance = new APIInstance({
-    baseURL: '/login'
+    baseURL: '/login',
 });
 
 const api = instance.api;

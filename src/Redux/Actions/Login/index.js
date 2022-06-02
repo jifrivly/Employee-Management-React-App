@@ -1,8 +1,4 @@
-import {
-    LOGIN_SUCCESS,
-    LOGIN_FAILED,
-    LOGIN_STARTED,
-} from '../../Redux.constants';
+import { LOGIN_SUCCESS, LOGIN_FAILED, LOGIN_STARTED } from '../../Redux.constants';
 import { login } from '../../../api/login';
 
 export function signIn(payload) {

@@ -1,5 +1,3 @@
-
-
 export const isValid = async ({ fields, key, value }) => {
     try {
         await fields[key].validate({ [key]: value });

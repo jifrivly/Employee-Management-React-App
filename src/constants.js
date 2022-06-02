@@ -1,4 +1,4 @@
 export const HEADINGS = {
-  COUNTER: 'Counter',
-  LOGIN_HERE: 'Login Here',
+    COUNTER: 'Counter',
+    LOGIN_HERE: 'Login Here',
 };
