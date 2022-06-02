@@ -1,0 +1,16 @@
+@import "../../../styles/abstracts/controls";
+.formsBlock {
+    @extend .flex-column;
+    &__list {
+        padding-top: 1rem;
+        padding-left: 10px;
+        @extend .flex-column;
+        li {
+            flex: 1 1 auto;
+            @extend .flex-column;
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

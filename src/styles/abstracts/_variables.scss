@@ -1,0 +1,31 @@
+$theme-colors-key: "base" !default;
+$theme-colors: (
+    "primary": (
+        "light": #2f3360,
+        "base": #222546,
+        "dark": #121424,
+    ),
+    "theam": (
+        "light": #2d9cca,
+        "medium": #474866,
+        "base": #29658a,
+        "dark": #25274d,
+    ),
+    "background": (
+        "white": #fff,
+        "black": #000,
+        "error": #f50136,
+    ),
+);
+@function theme-colors($name: "primary", $variant: $theme-colors-key, $opacity: 1) {
+    $color: null;
+    $color-spectrum: map-get($theme-colors, $name);
+    @if $color-spectrum {
+        $color: map-get($color-spectrum, $variant);
+    }
+    $alpha: if(type-of($opacity) == "number", $opacity, map-get($theme-opacity, $opacity));
+    @if $alpha {
+        $color: rgba($color, $alpha);
+    }
+    @return $color;
+}

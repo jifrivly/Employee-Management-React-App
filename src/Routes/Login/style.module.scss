@@ -1,0 +1,46 @@
+@import "../../styles/abstracts/controls";
+.loginWrapper {
+    min-height: 100vh;
+    background-color: #e3e3e3;
+    @extend .flex-column;
+    @extend .all-center;
+    .login {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 400px;
+        padding: 30px 40px;
+        border-radius: 4px;
+        background-color: #3fb0ac;
+        @extend .flex-column;
+        @extend .all-center;
+        @include box-shadow(0 1px 4px theme-colors("background", "black", 0.1));
+        input{
+            border-radius: 3px;
+        }
+        button{
+            border-radius: 3px;
+            padding: 10px;
+        }
+        &__header {
+            flex: 0 1 auto;
+            @extend .flex-column;
+            @extend .all-center;
+            h2 {
+                font-size: 1.25rem;
+                margin-bottom: 8px;
+                color: theme-colors("theam", "base");
+            }
+            p {
+                font-size: 0.75rem;
+                line-height: 20px;
+                color: theme-colors("theam", "base");
+            }
+        }
+        &__forms {
+            justify-content: center;
+            padding: 0px;
+            flex: 0 1 auto;
+            min-width: 100%;
+        }
+    }
+}

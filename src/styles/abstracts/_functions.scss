@@ -1,0 +1,89 @@
+@import "./mixins";
+.inline-flex {
+    @include inline-flex;
+}
+.flexbox {
+    @include flexbox();
+    @include flex-direction(row);
+}
+.flex-column {
+    @include flexbox();
+    @include flex-direction(column);
+}
+.row-reverse {
+    @include flex-direction(row-reverse);
+}
+.column-reverse {
+    @include flex-direction(column-reverse);
+}
+.all-center {
+    @include justify-content(center);
+    @include align-items(center);
+}
+
+.justify-center {
+    @include justify-content(center);
+}
+
+.justify-between {
+    @include justify-content(space-between);
+}
+
+.justify-around {
+    @include justify-content(space-around);
+}
+
+.justify-start {
+    @include justify-content(flex-start);
+}
+
+.justify-end {
+    @include justify-content(flex-end);
+}
+
+.item-center {
+    @include align-items(center);
+}
+
+.item-start {
+    @include align-items(flex-start);
+}
+
+.item-end {
+    @include align-items(flex-end);
+}
+
+.item-stretch {
+    @include align-items(stretch);
+}
+
+.item-nowrap {
+    @include flex-wrap(nowrap);
+}
+
+.item-wrap {
+    @include flex-wrap(wrap);
+}
+
+.image-overlay {
+    @include linear-gradient(
+        to top,
+        (theme-colors("primary", "base", $opacity: 0.7) 20%, theme-colors("primary", "base", $opacity: 0.01) 100%)
+    );
+}
+.timeline-box {
+    @include linear-gradient(
+        to top,
+        (theme-colors("primary", "base", $opacity: 0.1) 20%, theme-colors("primary", "base", $opacity: 0.01) 100%)
+    );
+}
+.borer-theam {
+    border-color: theme-colors("primary", "base", 0.1);
+}
+
+.break-text {
+    word-break: break-word;
+    line-break: strict;
+    white-space: normal;
+    @include hyphens("auto");
+}

@@ -1,0 +1,13 @@
+@import "../../styles/abstracts/controls";
+.formFeild {
+    @extend .flex-column;
+    label {
+        flex: 1 1 auto;
+        color: theme-colors("background", "white");
+    }
+    input {
+        min-height: 30px;
+        background: transparent;
+        border: solid 1px theme-colors("background", "white");
+    }
+}
