@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "name": "George Bluth",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg",
+        "employeeId": "0011",
+        "mobile": "+91 9895890011",
+        "joiningDate": "11/05/2014",
+        "role": "Software Engineer"
+    },
+    {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "name": "Janet Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg",
+        "employeeId": "0012",
+        "mobile": "+91 9895890012",
+        "joiningDate": "12/05/2014",
+        "role": "Project Manager"
+    },
+    {
+        "id": 3,
+        "email": "emma.wong@reqres.in",
+        "name": "Emma Wong",
+        "avatar": "https://reqres.in/img/faces/3-image.jpg",
+        "employeeId": "0013",
+        "mobile": "+91 9895890013",
+        "joiningDate": "13/05/2014",
+        "role": "Tech Lead"
+    },
+    {
+        "id": 4,
+        "email": "eve.holt@reqres.in",
+        "name": "Eve Holt",
+        "avatar": "https://reqres.in/img/faces/4-image.jpg",
+        "employeeId": "0014",
+        "mobile": "+91 9895890014",
+        "joiningDate": "14/05/2014",
+        "role": "Project Manager"
+    },
+    {
+        "id": 5,
+        "email": "charles.morris@reqres.in",
+        "name": "Charles Morris",
+        "avatar": "https://reqres.in/img/faces/5-image.jpg",
+        "employeeId": "0015",
+        "mobile": "+91 9895890015",
+        "joiningDate": "15/05/2014",
+        "role": "Software Engineer"
+    },
+    {
+        "id": 6,
+        "email": "tracey.ramos@reqres.in",
+        "name": "Tracey Ramos",
+        "avatar": "https://reqres.in/img/faces/6-image.jpg",
+        "employeeId": "0016",
+        "mobile": "+91 9895890016",
+        "joiningDate": "16/05/2014",
+        "role": "Senior Software Engineer"
+    },
+    {
+        "id": 7,
+        "email": "michael.lawson@reqres.in",
+        "name": "Michael Lawson",
+        "avatar": "https://reqres.in/img/faces/7-image.jpg",
+        "employeeId": "0017",
+        "mobile": "+91 9895890017",
+        "joiningDate": "17/05/2014",
+        "role": "Project Manager"
+    },
+    {
+        "id": 8,
+        "email": "lindsay.ferguson@reqres.in",
+        "name": "Lindsay Ferguson",
+        "avatar": "https://reqres.in/img/faces/8-image.jpg",
+        "employeeId": "0018",
+        "mobile": "+91 9895890018",
+        "joiningDate": "18/05/2014",
+        "role": "Software Test Engineer"
+    },
+    {
+        "id": 9,
+        "email": "tobias.funke@reqres.in",
+        "name": "Tobias Funke",
+        "avatar": "https://reqres.in/img/faces/9-image.jpg",
+        "employeeId": "0019",
+        "mobile": "+91 9895890019",
+        "joiningDate": "19/05/2014",
+        "role": "Project Manager"
+    },
+    {
+        "id": 10,
+        "email": "byron.fields@reqres.in",
+        "name": "Byron Fields",
+        "avatar": "https://reqres.in/img/faces/10-image.jpg",
+        "employeeId": "0020",
+        "mobile": "+91 9895890020",
+        "joiningDate": "20/05/2014",
+        "role": "Software Engineer"
+    },
+    {
+        "id": 11,
+        "email": "george.edwards@reqres.in",
+        "name": "George Edwards",
+        "avatar": "https://reqres.in/img/faces/11-image.jpg",
+        "employeeId": "0021",
+        "mobile": "+91 9895890021",
+        "joiningDate": "21/05/2014",
+        "role": "Software Engineer"
+    },
+    {
+        "id": 12,
+        "email": "rachel.howell@reqres.in",
+        "name": "Rachel Howell",
+        "avatar": "https://reqres.in/img/faces/12-image.jpg",
+        "employeeId": "0022",
+        "mobile": "+91 9895890022",
+        "joiningDate": "22/05/2014",
+        "role": "Senior Software Engineer"
+    }
+]
