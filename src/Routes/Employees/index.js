@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Router, Outlet } from 'react-router-dom';
 
 // import { users } from '../../api/users';
 import EmployeesHeader from './EmployeesHeader';
@@ -51,6 +52,8 @@ export class Employees extends Component {
                                 <EmployeesHeader />
                             </div>
                             <div className='card-body'>
+                                <Outlet></Outlet>
+
                                 <EmployeesTable employees={this.props.employees} />
                             </div>
                         </section>

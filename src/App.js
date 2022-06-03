@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
@@ -12,7 +12,7 @@ import { ROUTES } from './Routes.constants';
 import { CommonUtils } from './utils/commonUtils';
 
 function render(View) {
-    return CommonUtils.isLoggedIn() ? <Redirect to='/' /> : View;
+    return CommonUtils.isLoggedIn() ? <Navigate to='/' /> : View;
 }
 
 function App() {
@@ -28,11 +28,11 @@ function App() {
                 </a>
             </header> */}
             <Router>
-                <Switch>
-                    <Route path={ROUTES.LOGIN} render={(props) => render(<LoginPage {...props} />)} />
-                    <Route path={ROUTES.INDEX} render={() => <MainFrame employees={employees} />} />
-                    <Redirect from='*' to={ROUTES.INDEX} />
-                </Switch>
+                <Routes>
+                    <Route path={ROUTES.LOGIN} element={(props) => render(<LoginPage {...props} />)}></Route>
+                    <Route path={ROUTES.INDEX} element={<MainFrame employees={employees} />} />
+                    <Route path='*' element={<Navigate to={ROUTES.INDEX} />} />
+                </Routes>
             </Router>
         </div>
     );

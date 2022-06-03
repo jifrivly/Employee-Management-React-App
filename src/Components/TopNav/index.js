@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, withRouter } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropType from 'prop-types';
 
 import { ROUTES } from '../../Routes.constants';
@@ -23,7 +23,7 @@ class TopNav extends Component {
                 <ul>
                     {this.links.map((link, index) => (
                         <li key={index}>
-                            <NavLink to={link.path} activeClassName='active'>
+                            <NavLink to={link.path} className={({ isActive }) => (isActive ? 'active' : '')}>
                                 <span>{link.name}</span>
                             </NavLink>
                         </li>
@@ -34,7 +34,8 @@ class TopNav extends Component {
     }
 }
 
-export default withRouter(TopNav);
+export default TopNav;
+// export default withRouter(TopNav);
 
 TopNav.PropType = {
     className: PropType.string,
