@@ -8,9 +8,13 @@ export default function PrivateRoute({ component: Component, authed, ...rest }) 
     return (
         <Route
             {...rest}
-            render={(props) => CommonUtils.isLoggedIn()
-                ? <Component {...props} />
-                : <Redirect to={{ pathname: ROUTES.LOGIN, state: { from: props.location } }} />}
+            render={(props) =>
+                CommonUtils.isLoggedIn() ? (
+                    <Component {...props} {...rest} />
+                ) : (
+                    <Redirect to={{ pathname: ROUTES.LOGIN, state: { from: props.location } }} />
+                )
+            }
         />
     );
 }
