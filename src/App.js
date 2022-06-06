@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 
 import logo from './logo.svg';
 import './App.css';
-import employees from './Data/employees.json';
 
 import { MainFrame } from './Routes/MainFrame';
 import LoginPage from './Routes/Login';
@@ -30,7 +29,7 @@ function App() {
             <Router>
                 <Switch>
                     <Route path={ROUTES.LOGIN} render={(props) => render(<LoginPage {...props} />)} />
-                    <Route path={ROUTES.INDEX} render={() => <MainFrame employees={employees} />} />
+                    <Route path={ROUTES.INDEX} render={() => <MainFrame />} />
                     <Redirect from='*' to={ROUTES.INDEX} />
                 </Switch>
             </Router>
