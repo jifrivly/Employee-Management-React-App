@@ -1,14 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 
-import logo from './logo.svg';
 import './App.css';
 
-import { MainFrame } from './Routes/MainFrame';
-import LoginPage from './Routes/Login';
+import { MainFrame } from '../Routes/MainFrame';
+import LoginPage from '../Routes/Login';
 
-import { ROUTES } from './Routes.constants';
-import { CommonUtils } from './utils/commonUtils';
+import { ROUTES } from '../Routes.constants';
+import { CommonUtils } from '../utils/commonUtils';
 
 function render(View) {
     return CommonUtils.isLoggedIn() ? <Redirect to='/' /> : View;
