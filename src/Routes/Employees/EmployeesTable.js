@@ -13,15 +13,15 @@ export default function EmployeesTable(props) {
                 <div className='grid-block__item'>Action</div>
             </li>
             {props?.employees.map((data, index) => (
-                <li className='grid-block' key={data.id}>
+                <li className='grid-block' key={index}>
                     <div className='grid-block__item'>
-                        <div className='porofile-block'>
-                            <div className='porofile-block__image'>
+                        <div className='profile-block'>
+                            <div className='profile-block__image'>
                                 <span>
-                                    <img src={data.avatar} alt='imager' />
+                                    <img src={data.avatar} alt='profile' />
                                 </span>
                             </div>
-                            <div className='porofile-block__text'>
+                            <div className='profile-block__text'>
                                 <h3>{data.name}</h3>
                                 <p>{data.role}</p>
                             </div>
