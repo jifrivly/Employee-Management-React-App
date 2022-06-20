@@ -30,6 +30,21 @@ npm start
 <br>
 <hr>
 
+## Tasks
+### 1. Add new employee
+### 2. Add his attendance
+### 3. Employee inventory
+### 4. View Attendance
+### 5. Analytics on attendance
+1. Leave trend graph
+2. Top people who have taken most amount of leave as a table
+3. Employee leave date table , with option to sort based on date and name
+4. Top people who have not taken leave as a table
+5. Top days where leave have been taken as pie chart
+
+
+<hr>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
