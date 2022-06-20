@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { BrowserRouter as Router , Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Redirect } from 'react-router-dom';
 
 import TopNav from '../../Components/TopNav';
 import PrivateRoute from '../../utils/PrivateRoute';
@@ -41,12 +41,7 @@ export class MainFrame extends Component {
                             {/* <div className={style.container}> */}
                             <Switch>
                                 <PrivateRoute path={ROUTES.DASHBOARD} component={Dashboard} authed='' />
-                                <PrivateRoute
-                                    path={ROUTES.EMPLOYEES}
-                                    component={Employees}
-                                    authed=''
-                                    employees={this.props.employees}
-                                />
+                                <PrivateRoute path={ROUTES.EMPLOYEES} component={Employees} authed='' />
                                 <PrivateRoute path={ROUTES.CLIENTS} component={Clients} authed='' />
                                 <PrivateRoute path={ROUTES.PROJECTS} component={Projects} authed='' />
                                 <PrivateRoute path={ROUTES.TASKS} component={Tasks} authed='' />

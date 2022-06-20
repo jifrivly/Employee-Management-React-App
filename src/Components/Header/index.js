@@ -1,5 +1,6 @@
 import React from 'react';
 import PropType from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 import { ROUTES } from '../../Routes.constants';
 import style from './style.module.scss';
@@ -30,8 +31,7 @@ function Header(props) {
     );
 }
 
-export default Header;
-// export default withRouter(Header);
+export default withRouter(Header);
 
 Header.PropType = {
     className: PropType.string,

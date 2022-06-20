@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import PropType from 'prop-types';
 
-export default class ButtonElement extends Component {
-    render() {
-        return (
-            <button
-                type={this.props.type}
-                placeholder={this.props.placeholderLabel}
-                name={this.props.htmlForName}
-                onChange={this.props.onChange}
-                value={this.props.value}
-                children={this.props.children}
-                disabled={this.props.disable}
-            />
-        );
-    }
+export default function ButtonElement(props) {
+    return (
+        <button
+            type={props.type}
+            className={props.className}
+            placeholder={props.placeholderLabel}
+            name={props.htmlForName}
+            onChange={props.onChange}
+            value={props.value}
+            children={props.children}
+            disabled={props.disable}
+            {...props}
+        />
+    );
 }
 
 ButtonElement.Proptype = {
